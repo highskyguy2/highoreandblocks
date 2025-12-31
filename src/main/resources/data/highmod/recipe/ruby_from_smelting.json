@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "highmod:ruby_ore"
+  },
+  "result": {
+    "id": "highmod:ruby"
+  },
+  "experience": 0.3,
+  "cookingtime": 200
+}

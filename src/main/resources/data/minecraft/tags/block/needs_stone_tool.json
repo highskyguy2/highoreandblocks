@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "highmod:ruby_ore",
+    "highmod:ruby_block",
+    "highmod:raw_ruby_block"
+  ]
+}

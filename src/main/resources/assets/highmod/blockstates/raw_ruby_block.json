@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "highmod:block/raw_ruby_block"
+    }
+  }
+}
