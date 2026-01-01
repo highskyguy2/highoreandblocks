@@ -10,5 +10,7 @@
 
   "item.highmod.stainless_steel": "§5Stainless Steel",
 
-  "tooltip.highmod.stainless_steel": "§6What a delicious snack for food poisoning!"
+  "tooltip.highmod.stainless_steel": "§6What a delicious snack for food poisoning!",
+
+  "block.highmod.steel_block": "Stainless Steel Block"
 }
