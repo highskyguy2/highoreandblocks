@@ -12,5 +12,9 @@
 
   "tooltip.highmod.stainless_steel": "§6What a delicious snack for food poisoning!",
 
-  "block.highmod.steel_block": "Stainless Steel Block"
+  "block.highmod.steel_block": "Stainless Steel Block",
+  "block.highmod.steel_slab": "Stainless Steel Slab",
+  "block.highmod.steel_button": "Stainless Steel Button",
+  "block.highmod.steel_stairs": "Stainless Steel Stairs",
+  "block.highmod.steel_pressure_plate": "Stainless Steel Pressure Plate"
 }

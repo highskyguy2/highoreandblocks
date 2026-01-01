@@ -24,6 +24,10 @@ public class ItemGroups {
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModItems.STAINLESS_STEEL);
                         entries.add(ModBlocks.STAINLESS_STEEL_BLOCK);
+                        entries.add(ModBlocks.STEEL_BUTTON);
+                        entries.add(ModBlocks.STEEL_SLAB);
+                        entries.add(ModBlocks.STEEL_PRESSURE_PLATE);
+                        entries.add(ModBlocks.STEEL_STAIRS);
                     })
                     .build());
 

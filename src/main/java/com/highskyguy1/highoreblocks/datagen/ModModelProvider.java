@@ -18,7 +18,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_RUBY_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STAINLESS_STEEL_BLOCK);
+      BlockStateModelGenerator.BlockTexturePool steelPool =   blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STAINLESS_STEEL_BLOCK);
+
+      steelPool.stairs(ModBlocks.STEEL_STAIRS);
+      steelPool.pressurePlate(ModBlocks.STEEL_PRESSURE_PLATE);
+      steelPool.slab(ModBlocks.STEEL_SLAB);
+      steelPool.button(ModBlocks.STEEL_BUTTON);
     }
 
     @Override

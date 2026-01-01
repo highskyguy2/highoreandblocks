@@ -1,9 +1,7 @@
 package com.highskyguy1.highoreblocks.blocks;
 
 import com.highskyguy1.highoreblocks.HighsOresAndBlocks;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -35,7 +33,18 @@ public class ModBlocks {
              new Block(   AbstractBlock.Settings.create()
                     .strength(6f)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.NETHERITE)));
+                    .sounds(BlockSoundGroup.METAL)));
+    public static final Block STEEL_STAIRS = registerBlock("steel_stairs",
+            new StairsBlock(ModBlocks.STAINLESS_STEEL_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().requiresTool().strength(3.25f)));
+    public static final Block STEEL_SLAB = registerBlock("steel_slab",
+            new SlabBlock(
+                    AbstractBlock.Settings.create().requiresTool().strength(3.25f)));
+    public static final Block STEEL_BUTTON = registerBlock("steel_button",
+            new ButtonBlock(BlockSetType.IRON, 10, AbstractBlock.Settings.create().strength(3f).requiresTool().noCollision()));
+    public static final Block STEEL_PRESSURE_PLATE = registerBlock("steel_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON,
+                    AbstractBlock.Settings.create().requiresTool().strength(3.25f)));
 
     private static void registerBlockItem(String name, Block block){
         Registry.register(Registries.ITEM, Identifier.of(HighsOresAndBlocks.MOD_ID, name),
@@ -45,6 +54,8 @@ public class ModBlocks {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(HighsOresAndBlocks.MOD_ID, name), block);
     }
+
+
 
     public static void registerBlocks(){
         HighsOresAndBlocks.LOGGER.info("registering blocks for highob");

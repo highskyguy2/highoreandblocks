@@ -21,12 +21,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RUBY_BLOCK)
                 .add(ModBlocks.RUBY_ORE)
                         .add(ModBlocks.STAINLESS_STEEL_BLOCK)
+                .add(ModBlocks.STEEL_BUTTON)
+                .add(ModBlocks.STEEL_SLAB)
+                .add(ModBlocks.STEEL_PRESSURE_PLATE)
+                .add(ModBlocks.STEEL_STAIRS)
+
                 ;
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.RUBY_BLOCK)
                 .add(ModBlocks.RAW_RUBY_BLOCK)
                 .add(ModBlocks.STAINLESS_STEEL_BLOCK)
+                .add(ModBlocks.STEEL_SLAB)
+                .add(ModBlocks.STEEL_PRESSURE_PLATE)
+                .add(ModBlocks.STEEL_STAIRS)
                 ;
     }
 }

@@ -11,7 +11,9 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -54,8 +56,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', Items.IRON_SWORD)
                 .input('I', ModItems.STAINLESS_STEEL)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(recipeExporter, Identifier.of(HighsOresAndBlocks.MOD_ID, "iron_ingot_32423"));
+        //
+        offerSlabRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.STEEL_SLAB, ModItems.STAINLESS_STEEL);
+        createPressurePlateRecipe(RecipeCategory.MISC, ModBlocks.STEEL_PRESSURE_PLATE,  Ingredient.ofItems(ModItems.STAINLESS_STEEL))
+                .criterion(hasItem(ModItems.STAINLESS_STEEL), conditionsFromItem(ModItems.STAINLESS_STEEL))
                 .offerTo(recipeExporter);
+        createStairsRecipe(ModBlocks.STEEL_STAIRS, Ingredient.ofItems(ModItems.STAINLESS_STEEL))
+                .criterion(hasItem(ModItems.STAINLESS_STEEL), conditionsFromItem(ModItems.STAINLESS_STEEL))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STEEL_BUTTON, 10)
+                .pattern("#")
 
+                .input('#', ModItems.STAINLESS_STEEL)
+
+                .criterion(hasItem(ModItems.STAINLESS_STEEL), conditionsFromItem(ModItems.STAINLESS_STEEL))
+                .offerTo(recipeExporter);
     }
 
 

@@ -29,6 +29,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_BLOCK);
         addDrop(ModBlocks.RAW_RUBY_BLOCK);
         addDrop(ModBlocks.RUBY_ORE,  multipleOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY, 5, 10));
+        addDrop(ModBlocks.STEEL_BUTTON);
+        addDrop(ModBlocks.STEEL_SLAB, slabDrops(ModBlocks.STEEL_SLAB));
+        addDrop(ModBlocks.STEEL_PRESSURE_PLATE);
+        addDrop(ModBlocks.STEEL_STAIRS);
+        addDrop(ModBlocks.STAINLESS_STEEL_BLOCK);
     }
     // the fortune enchantment bonus thingy
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
