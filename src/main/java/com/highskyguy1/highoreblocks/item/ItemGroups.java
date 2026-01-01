@@ -23,6 +23,7 @@ public class ItemGroups {
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModItems.STAINLESS_STEEL);
+                        entries.add(ModBlocks.STAINLESS_STEEL_BLOCK);
                     })
                     .build());
 

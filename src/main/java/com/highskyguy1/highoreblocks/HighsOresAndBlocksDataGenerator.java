@@ -1,11 +1,12 @@
 package com.highskyguy1.highoreblocks;
 
-import com.highskyguy1.highoreblocks.datagen.ModBlockTagProvider;
-import com.highskyguy1.highoreblocks.datagen.ModItemTagProvider;
-import com.highskyguy1.highoreblocks.datagen.ModLootTableProvider;
-import com.highskyguy1.highoreblocks.datagen.ModModelProvider;
+import com.highskyguy1.highoreblocks.datagen.*;
+import com.highskyguy1.highoreblocks.worldgen.ModConfiguredFeatures;
+import com.highskyguy1.highoreblocks.worldgen.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class HighsOresAndBlocksDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -16,5 +17,16 @@ public class HighsOresAndBlocksDataGenerator implements DataGeneratorEntrypoint 
         pack.addProvider(ModItemTagProvider::new);
         pack.addProvider(ModLootTableProvider::new);
         pack.addProvider(ModModelProvider::new);
+        pack.addProvider(ModRecipeProvider::new);
+        pack.addProvider(ModRegistryDataGenerator::new);
+
 	}
+
+    @Override
+    public void buildRegistry(RegistryBuilder registryBuilder) {
+
+        registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+
+    }
 }

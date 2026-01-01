@@ -1,17 +1,20 @@
 package com.highskyguy1.highoreblocks.datagen;
 
 
+import com.highskyguy1.highoreblocks.HighsOresAndBlocks;
 import com.highskyguy1.highoreblocks.blocks.ModBlocks;
 import com.highskyguy1.highoreblocks.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -28,9 +31,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             offerSmelting(recipeExporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY, 0.25f, 200, "ruby");
         offerBlasting(recipeExporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY, 0.25f, 100, "ruby");
 
-        offerStonecuttingRecipe(recipeExporter, Items.IRON_INGOT, RecipeCategory.MISC, ModItems.STAINLESS_STEEL);
+
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModItems.STAINLESS_STEEL, Items.IRON_INGOT, 5);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, Items.IRON_INGOT, ModItems.STAINLESS_STEEL, 5);
+
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, RecipeCategory.DECORATIONS, ModBlocks.RUBY_BLOCK);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.STAINLESS_STEEL, RecipeCategory.DECORATIONS, ModBlocks.STAINLESS_STEEL_BLOCK);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_RUBY, RecipeCategory.DECORATIONS, ModBlocks.RAW_RUBY_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STAINLESS_STEEL,5)
+                .pattern(" # ")
+                .pattern("#I#")
+                .pattern(" # ")
+                .input('#', Items.IRON_SWORD)
+                .input('I', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(recipeExporter, Identifier.of(HighsOresAndBlocks.MOD_ID, "stainless_steel_from_crafting_21"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.IRON_INGOT, 5)
+                .pattern(" # ")
+                .pattern("#I#")
+                .pattern(" # ")
+                .input('#', Items.IRON_SWORD)
+                .input('I', ModItems.STAINLESS_STEEL)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(recipeExporter);
+
     }
 
-    public void offerStonecuttingRecipe(RecipeExporter recipeExporter, Item input, RecipeCategory recipeCategory, Item output) {
-    }
+
+
 }

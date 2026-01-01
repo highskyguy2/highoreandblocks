@@ -3,6 +3,7 @@ package com.highskyguy1.highoreblocks;
 import com.highskyguy1.highoreblocks.blocks.ModBlocks;
 import com.highskyguy1.highoreblocks.item.ItemGroups;
 import com.highskyguy1.highoreblocks.item.ModItems;
+import com.highskyguy1.highoreblocks.worldgen.core.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -21,5 +22,6 @@ public class HighsOresAndBlocks implements ModInitializer {
         ModItems.registerItems();
         ModBlocks.registerBlocks();
         ItemGroups.registerIG();
+        ModWorldGen.generateModWorldGen();
 	}
 }

@@ -19,10 +19,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RAW_RUBY_BLOCK)
                 .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.RUBY_ORE);
+                .add(ModBlocks.RUBY_ORE)
+                        .add(ModBlocks.STAINLESS_STEEL_BLOCK)
+                ;
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.RAW_RUBY_BLOCK);
+                .add(ModBlocks.RAW_RUBY_BLOCK)
+                .add(ModBlocks.STAINLESS_STEEL_BLOCK)
+                ;
     }
 }

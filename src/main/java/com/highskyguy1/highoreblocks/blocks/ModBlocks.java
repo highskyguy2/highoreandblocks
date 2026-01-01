@@ -3,12 +3,14 @@ package com.highskyguy1.highoreblocks.blocks;
 import com.highskyguy1.highoreblocks.HighsOresAndBlocks;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
@@ -23,10 +25,17 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)));
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
-            new Block(AbstractBlock.Settings.create()
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+            AbstractBlock.Settings.create()
                     .strength(4.5f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)));
+    public static final Block STAINLESS_STEEL_BLOCK = registerBlock("steel_block",
+
+             new Block(   AbstractBlock.Settings.create()
+                    .strength(6f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.NETHERITE)));
 
     private static void registerBlockItem(String name, Block block){
         Registry.register(Registries.ITEM, Identifier.of(HighsOresAndBlocks.MOD_ID, name),
