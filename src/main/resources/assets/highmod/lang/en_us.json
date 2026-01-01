@@ -6,5 +6,9 @@
   "block.highmod.raw_ruby_block": "Raw Ruby Block",
   "block.highmod.ruby_ore": "Ruby Ore",
 
-  "ig.highmod.hob_core": "High's Ore and Blocks Core"
+  "ig.highmod.hob_core": "High's Ore and Blocks Core",
+
+  "item.highmod.stainless_steel": "§5Stainless Steel",
+
+  "tooltip.highmod.stainless_steel": "§6What a delicious snack for food poisoning!"
 }
