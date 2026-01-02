@@ -16,5 +16,19 @@
   "block.highmod.steel_slab": "Stainless Steel Slab",
   "block.highmod.steel_button": "Stainless Steel Button",
   "block.highmod.steel_stairs": "Stainless Steel Stairs",
-  "block.highmod.steel_pressure_plate": "Stainless Steel Pressure Plate"
+  "block.highmod.steel_pressure_plate": "Stainless Steel Pressure Plate",
+
+  "item.highmod.ruby_axe": "Ruby Axe",
+  "item.highmod.ruby_sword": "Ruby Sword",
+  "item.highmod.ruby_pickaxe": "Ruby Pickaxe",
+  "item.highmod.ruby_hoe": "Ruby Hoe",
+  "item.highmod.ruby_shovel": "Ruby Shovel",
+
+  "item.highmod.magic_powder": "Magic Powder",
+
+  "painting.highmod.six_seven.title": "Six Seven",
+  "painting.highmod.six_seven_author": "some random brainrotted idiot",
+
+  "painting.highmod.heheheha.title": "Heheheha",
+  "painting.highmod.heheheha.author": "Clash Of Clans"
 }

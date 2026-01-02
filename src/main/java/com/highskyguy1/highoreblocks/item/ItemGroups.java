@@ -28,6 +28,11 @@ public class ItemGroups {
                         entries.add(ModBlocks.STEEL_SLAB);
                         entries.add(ModBlocks.STEEL_PRESSURE_PLATE);
                         entries.add(ModBlocks.STEEL_STAIRS);
+                        entries.add(ModItems.RUBY_SWORD);
+                        entries.add(ModItems.RUBY_AXE);
+                        entries.add(ModItems.RUBY_HOE);
+                        entries.add(ModItems.RUBY_SHOVEL);
+                        entries.add(ModItems.RUBY_PICKAXE);
                     })
                     .build());
 

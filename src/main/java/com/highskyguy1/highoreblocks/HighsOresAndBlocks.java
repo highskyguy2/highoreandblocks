@@ -3,10 +3,12 @@ package com.highskyguy1.highoreblocks;
 import com.highskyguy1.highoreblocks.blocks.ModBlocks;
 import com.highskyguy1.highoreblocks.item.ItemGroups;
 import com.highskyguy1.highoreblocks.item.ModItems;
+import com.highskyguy1.highoreblocks.util.ModVanillaLootTableModifier;
 import com.highskyguy1.highoreblocks.worldgen.core.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
@@ -29,7 +31,8 @@ public class HighsOresAndBlocks implements ModInitializer {
         ModBlocks.registerBlocks();
         ItemGroups.registerIG();
         ModWorldGen.generateModWorldGen();
-
+        ModVanillaLootTableModifier.modifyLootTables();
+        FuelRegistry.INSTANCE.add(ModItems.MAGIC_POWDER, 10000);
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
