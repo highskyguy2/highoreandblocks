@@ -1,0 +1,73 @@
+{
+  "item.highmod.ruby": "Ruby",
+  "item.highmod.raw_ruby": "Raw Ruby",
+
+  "block.highmod.ruby_block": "Ruby Block",
+  "block.highmod.raw_ruby_block": "Raw Ruby Block",
+  "block.highmod.ruby_ore": "Ruby Ore",
+
+  "ig.highmod.hob_core": "High's Ore and Blocks Core",
+  "ig.highmod.hob_pills": "High's Ore and Blocks Pills",
+
+  "item.highmod.stainless_steel": "§5Stainless Steel",
+
+  "tooltip.highmod.stainless_steel": "§6What a delicious snack for food poisoning!",
+
+  "block.highmod.steel_block": "Stainless Steel Block",
+  "block.highmod.steel_slab": "Stainless Steel Slab",
+  "block.highmod.steel_button": "Stainless Steel Button",
+  "block.highmod.steel_stairs": "Stainless Steel Stairs",
+  "block.highmod.steel_pressure_plate": "Stainless Steel Pressure Plate",
+
+  "item.highmod.ruby_axe": "Ruby Axe",
+  "item.highmod.ruby_sword": "Ruby Sword",
+  "item.highmod.ruby_pickaxe": "Ruby Pickaxe",
+  "item.highmod.ruby_hoe": "Ruby Hoe",
+  "item.highmod.ruby_shovel": "Ruby Shovel",
+
+  "item.highmod.steel_axe": "Steel Axe",
+  "item.highmod.steel_sword": "Steel Sword",
+  "item.highmod.steel_pickaxe": "Steel Pickaxe",
+  "item.highmod.steel_hoe": "Steel Hoe",
+  "item.highmod.steel_shovel": "Steel Shovel",
+
+  "item.highmod.magic_powder": "Magic Powder",
+
+  "painting.highmod.six_seven.title": "Six Seven",
+  "painting.highmod.six_seven.author": "some random brainrotted idiot",
+
+  "painting.highmod.heheheha.title": "Heheheha",
+  "painting.highmod.heheheha.author": "Clash Of Clans",
+
+  "item.highmod.pear": "Pear",
+  "item.highmod.golden_pear": "Golden Pear",
+  "item.highmod.enchanted_pear": "Enchanted Pear",
+
+  "item.highmod.banana": "Banana",
+  "tooltip.highmod.banana": "§6Is it a fruit or a weapon?",
+
+  "item.highmod.banana_stew": "Banana Stew",
+  "item.highmod.pear_stew": "Pear Stew",
+
+  "item.highmod.titanium": "Titanium",
+
+  "block.highmod.titanium_ore": "Titanium Ore",
+  "block.highmod.titanium_block": "Titanium Block",
+
+  "item.highmod.titanium_helmet": "Titanium Helmet",
+  "item.highmod.titanium_chestplate": "Titanium Chestplate",
+  "item.highmod.titanium_leggings": "Titanium Leggings",
+  "item.highmod.titanium_boots": "Titanium Boots",
+
+  "item.highmod.haste_pill": "Haste Pill",
+  "item.highmod.instant_health_pill": "Instant Health Pill",
+  "item.highmod.night_vision_pill": "Night Vision Pill",
+  "item.highmod.empty_pill": "Empty Pill",
+  "item.highmod.fire_resistant_pill": "Fire Resistant Pill",
+  "item.highmod.advanced_haste_pill": "Advanced Haste Pill"
+
+
+
+
+
+}

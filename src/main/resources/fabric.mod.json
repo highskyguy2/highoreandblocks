@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "highmod",
+	"version": "${version}",
+	"name": "High's Ores and Blocks",
+	"description": "High's Ore and Blocks adds ores and blocks",
+	"authors": [
+		"HighSkyGuy1"
+	],
+	"contact": {
+		"homepage": "https://highskyguy2.github.io"
+
+	},
+	"license": "MIT",
+	"icon": "assets/highmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.highskyguy1.highoreblocks.HighsOresAndBlocks"
+		],
+		"fabric-datagen": [
+			"com.highskyguy1.highoreblocks.HighsOresAndBlocksDataGenerator"
+		],
+      "client": [
+        "com.highskyguy1.highoreblocks.ModClient"
+      ]
+
+
+	},
+	"mixins": [
+		"highmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
