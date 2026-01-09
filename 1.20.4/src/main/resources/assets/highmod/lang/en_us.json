@@ -17,7 +17,7 @@
   "item.highmod.pear": "Pear",
   "item.highmod.golden_pear": "Golden Pear",
   "item.highmod.enchanted_pear": "Enchanted Pear",
-
+  "item.highmod.titanium": "Titanium",
   "item.highmod.titanium_sword": "Titanium Sword",
   "item.highmod.titanium_axe": "Titanium Axe",
   "item.highmod.titanium_pickaxe": "Titanium Pickaxe",
@@ -29,6 +29,16 @@
 
   "death.attack.fricking_sheep": "%1$s has died from fricking a sheep",
   "death.attack.fricking_sheep.player": "Don't you EVER do it again!",
-  ,
+
+  "adv.highmod.get_t_armor.title": "Cover Me in Titanium!",
+  "adv.highmod.get_t_armor.des": "Get a full set of Titanium Armor",
+
+  "block.highmod.titanium_ore": "Titanium Ore",
+
+  "item.highmod.titanium_helmet": "Titanium Helmet",
+  "item.highmod.titanium_chestplate": "Titanium Chestplate",
+  "item.highmod.titanium_leggings": "Titanium Leggings",
+  "item.highmod.titanium_boots": "Titanium Boots",
+
   "misc.highmod.sheep_end_rod_fricker": "<Server> How dare you do this type of disgusting things?\n You will be PUNISHED!"
 }

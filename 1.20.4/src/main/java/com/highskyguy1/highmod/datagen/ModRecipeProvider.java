@@ -24,6 +24,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
         final List<ItemConvertible> RUBY_ORE_SMELTABLES = List.of(ModBlocks.RUBY_ORE, ModItems.RUBY);
+        final List<ItemConvertible> TITANIUM_ORE = List.of(ModBlocks.TITANIUM_ORE);
+
 
         offerSmelting(exporter, RUBY_ORE_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, 0.3f, 200, "ruby");
 
@@ -53,7 +55,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ItemTags.STONE_CRAFTING_MATERIALS)
                 .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
                 .offerTo(exporter);
-
-
+        offerSmelting(exporter, TITANIUM_ORE,RecipeCategory.MISC , ModItems.TITANIUM, 100, 200, "titanium");
+        offerBlasting(exporter, TITANIUM_ORE,RecipeCategory.MISC , ModItems.TITANIUM, 100, 50, "titanium");
     }
 }

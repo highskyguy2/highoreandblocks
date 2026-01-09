@@ -34,5 +34,19 @@ public class ModAdvProvider extends FabricAdvancementProvider {
                 .criterion("has_ruby", InventoryChangedCriterion.Conditions.items(ModItems.RUBY))
                 .build(consumer, "highmod:get_ruby")
         ;
+        Advancement.Builder.create()
+                .display(
+                        ModItems.TITANIUM_CHESTPLATE,
+                        Text.translatable("adv.highmod.get_t_armor.title"),
+                        Text.translatable("adv.highmod.get_t_armor.des"),
+                        new Identifier("minecraft", "textures/block.stone.png"),
+                        AdvancementFrame.CHALLENGE,
+                        true,
+                        true,
+                        false
+                )
+                .criterion("has_ruby", InventoryChangedCriterion.Conditions.items(ModItems.TITANIUM_HELMET, ModItems.TITANIUM_CHESTPLATE, ModItems.TITANIUM_LEGGINGS, ModItems.TITANIUM_BOOTS))
+                .build(consumer, "highmod:get_t_armor")
+        ;
     }
 }

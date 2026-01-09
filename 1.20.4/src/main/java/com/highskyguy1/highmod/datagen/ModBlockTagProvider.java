@@ -4,6 +4,7 @@ package com.highskyguy1.highmod.datagen;
 import com.highskyguy1.highmod.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Block;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -23,10 +24,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RUBY_BLOCK)
                 .add(ModBlocks.RAW_RUBY_BLOCK)
                 .add(ModBlocks.RUBY_ORE)
+
                 ;
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.RAW_RUBY_BLOCK)
-                .add(ModBlocks.RUBY_BLOCK);
+                .add(ModBlocks.RUBY_BLOCK)
+                .add(ModBlocks.TITANIUM_ORE)
+        ;
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.TITANIUM_ORE);
     }
 }

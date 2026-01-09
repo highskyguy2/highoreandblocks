@@ -14,7 +14,7 @@ import java.util.function.BiConsumer;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
-    protected ModLootTableProvider(FabricDataOutput dataOutput) {
+    public ModLootTableProvider(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
 
@@ -23,5 +23,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RAW_RUBY_BLOCK);
         addDrop(ModBlocks.RUBY_BLOCK);
         addDrop(ModBlocks.RUBY_ORE, oreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
+        addDrop(ModBlocks.TITANIUM_ORE);
     }
 }

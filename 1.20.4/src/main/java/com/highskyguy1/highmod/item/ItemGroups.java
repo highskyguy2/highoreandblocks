@@ -41,6 +41,12 @@ public class ItemGroups {
                     entries.add(ModItems.TITANIUM_SWORD);
                     entries.add(ModItems.TITANIUM_PICKAXE);
                     entries.add(ModItems.TITANIUM_SHOVEL);
+                    entries.add(ModItems.TITANIUM_HELMET);
+                    entries.add(ModItems.TITANIUM_CHESTPLATE);
+                    entries.add(ModItems.TITANIUM_LEGGINGS);
+                    entries.add(ModItems.TITANIUM_BOOTS);
+                    entries.add(ModBlocks.TITANIUM_ORE);
+
 
                 })
                 .build());

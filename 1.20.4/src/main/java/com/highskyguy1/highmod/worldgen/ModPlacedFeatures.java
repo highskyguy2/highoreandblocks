@@ -1,6 +1,7 @@
-package com.highskyguy1.highoreblocks.worldgen;
+package com.highskyguy1.highmod.worldgen;
 
-import com.highskyguy1.highoreblocks.HighsOresAndBlocks;
+
+import com.highskyguy1.highmod.HighsOresAndBlocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -24,19 +25,19 @@ public class ModPlacedFeatures {
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         register(context, TITANIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TITANIUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(6,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
+                ModOrePlacement.modifiersWithCount(8,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-75), YOffset.fixed(80))));
 
         register(context, RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBY_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(14,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-75), YOffset.fixed(80))));
 
 
     }
 
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
-        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(HighsOresAndBlocks.MOD_ID, name));
+        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(HighsOresAndBlocks.MOD_ID, name));
     }
 
     private static void register(Registerable<PlacedFeature> context, RegistryKey<PlacedFeature> key, RegistryEntry<ConfiguredFeature<?, ?>> configuration,
