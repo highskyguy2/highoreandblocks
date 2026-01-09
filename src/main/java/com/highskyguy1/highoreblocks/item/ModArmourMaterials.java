@@ -26,6 +26,15 @@ public class ModArmourMaterials {
                 map.put(ArmorItem.Type.BODY, 15);
             }),20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.TITANIUM) ,
                     List.of(new ArmorMaterial.Layer(Identifier.of(HighsOresAndBlocks.MOD_ID, "titanium"))), 5, 10));
+    public static final RegistryEntry<ArmorMaterial> STEEL_ARMOR_MATERIAL = registerArmorMaterial("titanium",
+            ()-> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 10);
+                map.put(ArmorItem.Type.LEGGINGS, 24);
+                map.put(ArmorItem.Type.CHESTPLATE, 32);
+                map.put(ArmorItem.Type.HELMET, 53);
+                map.put(ArmorItem.Type.BODY, 21);
+            }),30, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.STAINLESS_STEEL) ,
+                    List.of(new ArmorMaterial.Layer(Identifier.of(HighsOresAndBlocks.MOD_ID, "steel"))), 5, 10));
 
 
 

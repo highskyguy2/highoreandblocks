@@ -121,6 +121,22 @@ public class ModItems {
             new ArmorItem(ModArmourMaterials.TITANIUM_ARMOR_MATERIAL , ArmorItem.Type.BOOTS ,new Item.Settings()
                     .fireproof()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(370))));
+    public static final Item STEEL_HELMET = registerItem("steel_helmet",
+            new ArmorItem(ModArmourMaterials.STEEL_ARMOR_MATERIAL , ArmorItem.Type.HELMET ,new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(370))));
+    public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate",
+            new ArmorItem(ModArmourMaterials.STEEL_ARMOR_MATERIAL , ArmorItem.Type.CHESTPLATE ,new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(370))));
+    public static final Item STEEL_LEGGINGS = registerItem("steel_leggings",
+            new ArmorItem(ModArmourMaterials.STEEL_ARMOR_MATERIAL , ArmorItem.Type.LEGGINGS ,new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(370))));
+    public static final Item STEEL_BOOTS = registerItem("steel_boots",
+            new ArmorItem(ModArmourMaterials.STEEL_ARMOR_MATERIAL , ArmorItem.Type.BOOTS ,new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(370))));
 
                                         // PILLS //
     public static final Item HASTE_PILL = ModRegistras.registerPills("haste_pill",

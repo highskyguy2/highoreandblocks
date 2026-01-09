@@ -28,6 +28,10 @@ public class ItemGroups {
                         entries.add(ModBlocks.STEEL_SLAB);
                         entries.add(ModBlocks.STEEL_PRESSURE_PLATE);
                         entries.add(ModBlocks.STEEL_STAIRS);
+                        entries.add(ModItems.STEEL_HELMET);
+                        entries.add(ModItems.STEEL_CHESTPLATE);
+                        entries.add(ModItems.STEEL_LEGGINGS);
+                        entries.add(ModItems.STEEL_BOOTS);
                         entries.add(ModItems.RUBY_SWORD);
                         entries.add(ModItems.RUBY_AXE);
                         entries.add(ModItems.RUBY_HOE);
@@ -50,10 +54,13 @@ public class ItemGroups {
                         entries.add(ModBlocks.TITANIUM_ORE);
                         entries.add(ModBlocks.TITANIUM_BLOCK);
                         entries.add(ModItems.TITANIUM);
+
                         entries.add(ModItems.TITANIUM_HELMET);
-                        entries.add(ModItems.TITANIUM_BOOTS);
                         entries.add(ModItems.TITANIUM_CHESTPLATE);
                         entries.add(ModItems.TITANIUM_LEGGINGS);
+                        entries.add(ModItems.TITANIUM_BOOTS);
+
+
                     })
                     .build());
     public static final ItemGroup HOB_PILLS = Registry.register(Registries.ITEM_GROUP,

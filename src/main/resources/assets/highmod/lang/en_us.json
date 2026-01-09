@@ -64,10 +64,17 @@
   "item.highmod.night_vision_pill": "Night Vision Pill",
   "item.highmod.empty_pill": "Empty Pill",
   "item.highmod.fire_resistant_pill": "Fire Resistant Pill",
-  "item.highmod.advanced_haste_pill": "Advanced Haste Pill"
+  "item.highmod.advanced_haste_pill": "Advanced Haste Pill",
 
+  "item.highmod.steel_helmet": "Steel Helmet",
+  "item.highmod.steel_chestplate": "Steel Chestplate",
+  "item.highmod.steel_leggings": "Steel Leggings",
+  "item.highmod.steel_boots": "Steel Boots",
 
+  "adv.highmod.get_ruby.title": "True Explorer",
+  "adv.highmod.get_ruby.des": "You mined the ore and smelt it to get ruby!",
 
-
-
+  "death.attack.fricking_sheep": "%1$s has died from fricking a sheep",
+  "death.attack.fricking_sheep.player": "Don't you EVER do it again!",
+  "misc.highmod.sheep_end_rod_fricker": "<Server> How dare you do this type of disgusting things?\n You will be PUNISHED!"
 }

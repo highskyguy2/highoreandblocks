@@ -61,6 +61,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.TITANIUM_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.TITANIUM_LEGGINGS);
 
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_LEGGINGS);
+
         itemModelGenerator.register(ModItems.HASTE_PILL, Models.GENERATED);
         itemModelGenerator.register(ModItems.INSTANT_HEALTH_PILL, Models.GENERATED);
         itemModelGenerator.register(ModItems.NIGHT_VISION_PILL, Models.GENERATED);

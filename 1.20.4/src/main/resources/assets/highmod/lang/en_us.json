@@ -1,0 +1,34 @@
+{
+  "item.highmod.ruby": "Ruby",
+  "item.highmod.raw_ruby": "Raw Ruby",
+
+  "ig.highmod.hobm_core": "High's Ore and Blocks Core",
+  "block.highmod.ruby_block": "Ruby Block",
+  "block.highmod.raw_ruby_block": "Raw Ruby Block",
+  "block.highmod.ruby_ore": "Ruby Ore",
+  "item.highmod.stainless_steel": "§5Stainless Steel",
+
+
+
+  "tooltip.highmod.stainless_steel": "§6What a delicious snack for food poisoning!",
+
+  "item.highmod.banana": "Banana",
+  "tooltip.highmod.banana": "§6Is it a fruit or a weapon?",
+  "item.highmod.pear": "Pear",
+  "item.highmod.golden_pear": "Golden Pear",
+  "item.highmod.enchanted_pear": "Enchanted Pear",
+
+  "item.highmod.titanium_sword": "Titanium Sword",
+  "item.highmod.titanium_axe": "Titanium Axe",
+  "item.highmod.titanium_pickaxe": "Titanium Pickaxe",
+  "item.highmod.titanium_shovel": "Titanium Shovel",
+  "item.highmod.titanium_hoe": "Titanium Hoe",
+
+  "adv.highmod.get_ruby.title": "True Explorer",
+  "adv.highmod.get_ruby.des": "You mined the ore and smelt it to get ruby!",
+
+  "death.attack.fricking_sheep": "%1$s has died from fricking a sheep",
+  "death.attack.fricking_sheep.player": "Don't you EVER do it again!",
+  ,
+  "misc.highmod.sheep_end_rod_fricker": "<Server> How dare you do this type of disgusting things?\n You will be PUNISHED!"
+}

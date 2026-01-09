@@ -26,26 +26,26 @@ public class ModVanillaLootTableModifier {
                     builder.pool(
                     LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1f))
-                            .conditionally(RandomChanceLootCondition.builder(0.65f))
+                            .conditionally(RandomChanceLootCondition.builder(0.55f))
                             .with(ItemEntry.builder(ModItems.STAINLESS_STEEL))
-                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 5f)).build())
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 2f)).build())
 
                     );
                     builder.pool(
                             LootPool.builder()
                                     .rolls(ConstantLootNumberProvider.create(1f))
-                                    .conditionally(RandomChanceLootCondition.builder(0.75f))
+                                    .conditionally(RandomChanceLootCondition.builder(0.35f))
                                     .with(ItemEntry.builder(ModItems.RAW_RUBY))
-                                    .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 15f)).build())
+                                    .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 3f)).build())
                     );
 
                 }
                 if (CREEPER_ID.equals(registryKey.getValue())){
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(ConstantLootNumberProvider.create(1f))
-                            .conditionally(RandomChanceLootCondition.builder(0.55f))
+                            .conditionally(RandomChanceLootCondition.builder(0.25f))
                             .with(ItemEntry.builder(ModItems.BANANA))
-                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 2f)).build());
+                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1f, 1f)).build());
                     builder.pool(poolBuilder.build());
                 }
                 if (IRON_ORE_ID.equals(registryKey.getValue())){

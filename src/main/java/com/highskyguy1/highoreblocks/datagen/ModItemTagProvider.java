@@ -21,7 +21,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.TITANIUM_BOOTS)
                 .add(ModItems.TITANIUM_HELMET)
                 .add(ModItems.TITANIUM_CHESTPLATE)
-                .add(ModItems.TITANIUM_LEGGINGS);
+                .add(ModItems.TITANIUM_LEGGINGS)
+                .add(ModItems.STEEL_HELMET)
+                        .add(ModItems.STEEL_CHESTPLATE)
+                                .add(ModItems.STEEL_LEGGINGS)
+                                        .add(ModItems.STEEL_BOOTS);
         getOrCreateTagBuilder(ModTags.Items.HASTE_PILL_ACCEPTABLE_PICKAXES)
                 .add(ModItems.STEEL_PICKAXE)
                 .add(ModItems.RUBY_PICKAXE)

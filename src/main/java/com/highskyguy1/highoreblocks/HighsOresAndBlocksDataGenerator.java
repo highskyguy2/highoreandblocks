@@ -20,6 +20,7 @@ public class HighsOresAndBlocksDataGenerator implements DataGeneratorEntrypoint 
         pack.addProvider(ModModelProvider::new);
         pack.addProvider(ModRecipeProvider::new);
         pack.addProvider(ModRegistryDataGenerator::new);
+        pack.addProvider(ModAdvProvider::new);
 
 
 

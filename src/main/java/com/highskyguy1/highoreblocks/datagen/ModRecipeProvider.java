@@ -10,6 +10,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
@@ -68,9 +69,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter, Identifier.of(HighsOresAndBlocks.MOD_ID, "iron_ingot_32423"));
         //
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUBY_AXE, 1)
-                .pattern("###")
-                .pattern("#S ")
-                .pattern(" S ")
+                .pattern("##")
+                .pattern("#S")
+                .pattern(" S")
                 .input('#', ModItems.RUBY)
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
@@ -117,21 +118,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter, Identifier.of(HighsOresAndBlocks.MOD_ID, "ruby_hoe_69"));
         // steel
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_AXE, 1)
-                .pattern("###")
-                .pattern("#S ")
-                .pattern(" S ")
+                .pattern("##")
+                .pattern("#S")
+                .pattern(" S")
                 .input('#', ModItems.STAINLESS_STEEL)
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.STAINLESS_STEEL), conditionsFromItem(ModItems.STAINLESS_STEEL))
                 .offerTo(recipeExporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_AXE, 1)
-                .pattern("###")
-                .pattern(" S#")
-                .pattern(" S ")
-                .input('#', ModItems.STAINLESS_STEEL)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.STAINLESS_STEEL), conditionsFromItem(ModItems.STAINLESS_STEEL))
-                .offerTo(recipeExporter, Identifier.of(HighsOresAndBlocks.MOD_ID, "steel_axe_2"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_PICKAXE, 1)
                 .pattern("###")
                 .pattern(" S ")
@@ -203,6 +197,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('P', ModItems.PEAR)
                 .criterion(hasItem(ModItems.GOLDEN_PEAR), conditionsFromItem(ModItems.GOLDEN_PEAR))
                 .offerTo(recipeExporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PEAR_STEW, 1)
+                        .input(Items.BOWL)
+                                .input(ModItems.PEAR)
+                .criterion(hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
+                .offerTo(recipeExporter);
         ModRegistras.createPillRecipeWithTags(ModItems.HASTE_PILL, 60, ModTags.Items.HASTE_PILL_ACCEPTABLE_PICKAXES, ModItems.EMPTY_PILL)
                 .criterion(hasItem(ModItems.EMPTY_PILL), conditionsFromItem(ModItems.EMPTY_PILL))
                 .offerTo(recipeExporter);
@@ -219,6 +218,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ModRegistras.createPillRecipe(ModItems.NIGHT_VISION_PILL, 60, Items.CARROT, ModItems.EMPTY_PILL)
                 .criterion(hasItem(ModItems.EMPTY_PILL), conditionsFromItem(ModItems.EMPTY_PILL))
                 .offerTo(recipeExporter);
+        ModRegistras.createHelmetRecipe(ModItems.TITANIUM_HELMET, ModItems.TITANIUM);
+        ModRegistras.createChestPRecipe(ModItems.TITANIUM_CHESTPLATE, ModItems.TITANIUM);
+        ModRegistras.createLeggingsRecipe(ModItems.TITANIUM_LEGGINGS, ModItems.TITANIUM);
+        ModRegistras.createBootsRecipe(ModItems.TITANIUM_BOOTS, ModItems.TITANIUM);
+
+        ModRegistras.createHelmetRecipe(ModItems.STEEL_HELMET, ModItems.STAINLESS_STEEL);
+        ModRegistras.createChestPRecipe(ModItems.STEEL_CHESTPLATE, ModItems.STAINLESS_STEEL);
+        ModRegistras.createLeggingsRecipe(ModItems.STEEL_LEGGINGS, ModItems.STAINLESS_STEEL);
+        ModRegistras.createBootsRecipe(ModItems.STEEL_BOOTS, ModItems.STAINLESS_STEEL);
+
     }
 
 

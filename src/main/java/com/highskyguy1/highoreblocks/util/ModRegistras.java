@@ -58,4 +58,19 @@ public class ModRegistras {
                 .input('#', asterisk)
                 .input('G', g);
     }
+    public static CraftingRecipeJsonBuilder createHelmetRecipe(ItemConvertible output, ItemConvertible material){
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output, 1).pattern("###").pattern("# #").input('#', material);
+    }
+    public static CraftingRecipeJsonBuilder createChestPRecipe(ItemConvertible output, ItemConvertible material){
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output, 1).pattern("# #").pattern("###").pattern("###").input('#', material);
+
+    }
+    public static CraftingRecipeJsonBuilder createLeggingsRecipe(ItemConvertible output, ItemConvertible material){
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output, 1).pattern("###").pattern("# #").pattern("# #").input('#', material);
+
+    }
+    public static CraftingRecipeJsonBuilder createBootsRecipe(ItemConvertible output, ItemConvertible material){
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output, 1).pattern("# #").pattern("# #").input('#', material);
+
+    }
 }
