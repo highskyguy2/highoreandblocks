@@ -30,6 +30,15 @@ public class ItemGroups {
                     entries.add(ModBlocks.RAW_RUBY_BLOCK);
                     entries.add(ModBlocks.RUBY_ORE);
                     entries.add(ModItems.STAINLESS_STEEL);
+                    entries.add(ModItems.STEEL_PICKAXE);
+                    entries.add(ModItems.STEEL_SWORD);
+                    entries.add(ModItems.STEEL_HOE);
+                    entries.add(ModItems.STEEL_AXE);
+                    entries.add(ModItems.STEEL_SHOVEL);
+                    entries.add(ModItems.STEEL_HELMET);
+                    entries.add(ModItems.STEEL_CHESTPLATE);
+                    entries.add(ModItems.STEEL_LEGGINGS);
+                    entries.add(ModItems.STEEL_BOOTS);
                     entries.add(ModItems.PEAR);
                     entries.add(ModItems.GOLDEN_PEAR);
                     entries.add(ModItems.ENCHANTED_PEAR);
@@ -41,6 +50,7 @@ public class ItemGroups {
                     entries.add(ModItems.TITANIUM_SWORD);
                     entries.add(ModItems.TITANIUM_PICKAXE);
                     entries.add(ModItems.TITANIUM_SHOVEL);
+
                     entries.add(ModItems.TITANIUM_HELMET);
                     entries.add(ModItems.TITANIUM_CHESTPLATE);
                     entries.add(ModItems.TITANIUM_LEGGINGS);

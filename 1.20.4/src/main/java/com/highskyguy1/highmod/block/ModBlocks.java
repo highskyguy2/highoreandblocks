@@ -23,6 +23,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.create().requiresTool().strength(4f)));
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
             new Block(FabricBlockSettings.create().requiresTool().strength(5f)));
+    public static final Block TITANIUM_BLOCK = registerBlock("titanium_block",
+            new Block(FabricBlockSettings.create()));
 
 
     public static Block registerBlock(String string, Block block){

@@ -1,6 +1,7 @@
 package com.highskyguy1.highmod.datagen;
 
 
+import com.highskyguy1.highmod.block.ModBlocks;
 import com.highskyguy1.highmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
@@ -45,8 +46,23 @@ public class ModAdvProvider extends FabricAdvancementProvider {
                         true,
                         false
                 )
-                .criterion("has_ruby", InventoryChangedCriterion.Conditions.items(ModItems.TITANIUM_HELMET, ModItems.TITANIUM_CHESTPLATE, ModItems.TITANIUM_LEGGINGS, ModItems.TITANIUM_BOOTS))
+                .criterion("get_t_armor", InventoryChangedCriterion.Conditions.items(ModItems.TITANIUM_HELMET, ModItems.TITANIUM_CHESTPLATE, ModItems.TITANIUM_LEGGINGS, ModItems.TITANIUM_BOOTS))
                 .build(consumer, "highmod:get_t_armor")
         ;
+        Advancement.Builder.create()
+                .display(
+                        ModBlocks.TITANIUM_BLOCK,
+                        Text.translatable("adv.highmod.get_t_block.title"),
+                        Text.translatable("adv.highmod.get_t_block.des"),
+                        new Identifier("minecraft", "textures/block.stone.png"),
+                        AdvancementFrame.GOAL,
+                        true,
+                        true,
+                        false
+                )
+                .criterion("has_t_block", InventoryChangedCriterion.Conditions.items(ModItems.TITANIUM_HELMET, ModItems.TITANIUM_CHESTPLATE, ModItems.TITANIUM_LEGGINGS, ModItems.TITANIUM_BOOTS))
+                .build(consumer, "highmod:has_t_block")
+        ;
     }
+
 }

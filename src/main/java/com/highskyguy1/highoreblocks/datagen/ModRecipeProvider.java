@@ -18,6 +18,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import com.highskyguy1.highoreblocks.util.ModRegistras;
@@ -204,6 +205,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
         ModRegistras.createPillRecipeWithTags(ModItems.HASTE_PILL, 60, ModTags.Items.HASTE_PILL_ACCEPTABLE_PICKAXES, ModItems.EMPTY_PILL)
                 .criterion(hasItem(ModItems.EMPTY_PILL), conditionsFromItem(ModItems.EMPTY_PILL))
+                .offerTo(recipeExporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.BEDROCK, 5)
+                .input(ItemTags.BEDS)
+                .input(ItemTags.STONE_CRAFTING_MATERIALS)
+                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
                 .offerTo(recipeExporter);
         ModRegistras.createPillRecipeWithTags(ModItems.ADVANCED_HASTE_PILL, 30, ModTags.Items.HASTE_PILL_ACCEPTABLE_PICKAXES, ModItems.HASTE_PILL)
                 .criterion(hasItem(ModItems.EMPTY_PILL), conditionsFromItem(ModItems.EMPTY_PILL))

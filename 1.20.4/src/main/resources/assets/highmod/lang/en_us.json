@@ -40,5 +40,19 @@
   "item.highmod.titanium_leggings": "Titanium Leggings",
   "item.highmod.titanium_boots": "Titanium Boots",
 
+  "adv.highmod.get_t_block.title": "Acquired Extra Hardware!",
+  "adv.highmod.get_t_block.des": "Get a titanium block",
+
+  "item.highmod.steel_pickaxe": "Steel Pickaxe",
+  "item.highmod.steel_sword": "Steel Sword",
+  "item.highmod.steel_axe": "Steel Axe",
+  "item.highmod.steel_hoe": "Steel Hoe",
+  "item.highmod.steel_shovel": "Steel Shovel",
+
+  "item.highmod.steel_helmet": "Steel Helmet",
+  "item.highmod.steel_chestplate": "Steel Chestplate",
+  "item.highmod.steel_leggings": "Steel Leggings",
+  "item.highmod.steel_boots": "Steel Boots",
+
   "misc.highmod.sheep_end_rod_fricker": "<Server> How dare you do this type of disgusting things?\n You will be PUNISHED!"
 }

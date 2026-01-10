@@ -1,6 +1,7 @@
 package com.highskyguy1.highmod.item;
 
 import com.highskyguy1.highmod.HighsOresAndBlocks;
+import com.highskyguy1.highmod.armor.SteelArmorMaterial;
 import com.highskyguy1.highmod.armor.TitaniumArmorMaterial;
 import com.highskyguy1.highmod.food.ModFoodComponents;
 import com.highskyguy1.highmod.tools.ModToolMaterials;
@@ -63,15 +64,35 @@ public class ModItems {
     public static final Item TITANIUM_SWORD = registerItem("titanium_sword",
             new SwordItem(ModToolMaterials.TITANIUM, 15, 2, new Item.Settings()));
 
+    public static final Item STEEL_HELMET = registerItem("steel_helmet",
+            new ArmorItem(new SteelArmorMaterial(), ArmorItem.Type.HELMET, new Item.Settings()));
+    public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate",
+            new ArmorItem(new SteelArmorMaterial(), ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+    public static final Item STEEL_LEGGINGS = registerItem("steel_leggings",
+            new ArmorItem(new SteelArmorMaterial(), ArmorItem.Type.LEGGINGS, new Item.Settings()));
+    public static final Item STEEL_BOOTS = registerItem("steel_boots",
+            new ArmorItem(new SteelArmorMaterial(), ArmorItem.Type.BOOTS, new Item.Settings()));
+    public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe",
+            new PickaxeItem(ModToolMaterials.STEEL, 1, 0.3f, new Item.Settings()));
+    public static final Item STEEL_HOE = registerItem("steel_hoe",
+            new HoeItem(ModToolMaterials.STEEL, 0, 0.5f, new Item.Settings()));
+
+    public static final Item STEEL_SHOVEL = registerItem("steel_shovel",
+            new ShovelItem(ModToolMaterials.STEEL, 1, 0.6f, new Item.Settings()));
+    public static final Item STEEL_AXE = registerItem("steel_axe",
+            new AxeItem(ModToolMaterials.STEEL, 15, 1, new Item.Settings()));
+    public static final Item STEEL_SWORD = registerItem("steel_sword",
+            new SwordItem(ModToolMaterials.STEEL, 15, 2, new Item.Settings()));
+
 
     public static final Item TITANIUM_HELMET = registerItem("titanium_helmet",
             new ArmorItem(new TitaniumArmorMaterial(), ArmorItem.Type.HELMET, new Item.Settings()));
     public static final Item TITANIUM_CHESTPLATE = registerItem("titanium_chestplate",
-            new ArmorItem(new TitaniumArmorMaterial(), ArmorItem.Type.HELMET, new Item.Settings()));
+            new ArmorItem(new TitaniumArmorMaterial(), ArmorItem.Type.CHESTPLATE, new Item.Settings()));
     public static final Item TITANIUM_LEGGINGS = registerItem("titanium_leggings",
-            new ArmorItem(new TitaniumArmorMaterial(), ArmorItem.Type.HELMET, new Item.Settings()));
+            new ArmorItem(new TitaniumArmorMaterial(), ArmorItem.Type.LEGGINGS, new Item.Settings()));
     public static final Item TITANIUM_BOOTS = registerItem("titanium_boots",
-            new ArmorItem(new TitaniumArmorMaterial(), ArmorItem.Type.HELMET, new Item.Settings()));
+            new ArmorItem(new TitaniumArmorMaterial(), ArmorItem.Type.BOOTS, new Item.Settings()));
 
     public static Item registerItem(String string, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HighsOresAndBlocks.MOD_ID, string), item);

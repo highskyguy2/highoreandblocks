@@ -28,6 +28,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
         offerSmelting(exporter, RUBY_ORE_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, 0.3f, 200, "ruby");
+        offerBlasting(exporter, RUBY_ORE_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, 0.3f, 100, "ruby");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RUBY , RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RAW_RUBY, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_RUBY_BLOCK);
@@ -48,6 +49,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('I', ModItems.STAINLESS_STEEL)
                 .criterion(hasItem(ModItems.STAINLESS_STEEL), conditionsFromItem(ModItems.STAINLESS_STEEL))
                 .offerTo(exporter);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.TITANIUM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TITANIUM_BLOCK);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, ModItems.STAINLESS_STEEL, Items.IRON_INGOT);
         offerStonecuttingRecipe(exporter, RecipeCategory.MISC, Items.IRON_INGOT, ModItems.STAINLESS_STEEL);
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.BEDROCK, 5)
